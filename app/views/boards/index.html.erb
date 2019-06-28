@@ -1,5 +1,5 @@
 <div class="d-flex align-items-center">
-  <h1>掲示板一覧</h1>
+  <h1>投稿物件一覧</h1>
   <div class="ml-auto boards__linkBox">
     <%= form_tag boards_path, method: :get, class: 'boards__searchForm' do %>
       <%= select_tag :tag_id,
@@ -11,7 +11,7 @@
                      }
       %>
     <% end %>
-    <a href="/boards/new" class="btn btn-outline-dark">新規作成</a>
+    <a href="/boards/new" class="btn btn-outline-dark">物件登録</a>
   </div>
 </div>
 
@@ -23,8 +23,8 @@
   <thead class="thead-dark">
     <tr>
       <th>ID</th>
-      <th>タイトル</th>
-      <th>作成者</th>
+      <th>建物名</th>
+      <th>賃料</th>
       <th>作成日時</th>
       <th>更新日時</th>
       <th></th>
